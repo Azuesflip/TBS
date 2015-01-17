@@ -1,3 +1,3 @@
-<% provide(:title, "Help") %>
+<% provide(:title, "Help")
 <h1>FAQ and Other Awesome Information</h1>
 <p>These are helpful tips and tricks for your buying experience</p>
