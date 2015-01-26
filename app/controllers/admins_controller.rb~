@@ -1,0 +1,28 @@
+class AdminsController < ApplicationController
+
+  def show
+    @user = Admin.find(params[:id])
+  end
+
+  def new
+    @user = Admin.new
+  end
+
+  def create
+    @user = admin.new(user_params)
+    if @adm.save
+      log_in @admin
+      flash[:success] = "Welcome to the Sample App!"
+      redirect_to @admin
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+    def user_params
+      params.require(:admin).permit(:name, :email, :password,
+                                   :password_confirmation)
+    end
+end
