@@ -12,7 +12,6 @@ module SessionsHelper
   end
 
   def log_out
-  	current_admin.forget
     session.delete(:admin_id)
     @current_admin = nil
   end
