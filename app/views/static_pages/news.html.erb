@@ -1,6 +1,26 @@
 <% provide(:title, "News") %>
+<p id="notice"><%= notice %></p>
 
-<div class="center jumbotron">
-	<h1>News on Twisted Bit Studios</h1>
-	<p>Here you will find news and blog posts from the artist Bill Niedig.</p>
-</div>
+<h1>Listing Articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.date %></td>
+        <td><%= link_to 'Show', article %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

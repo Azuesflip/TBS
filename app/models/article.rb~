@@ -1,0 +1,13 @@
+class Article < ActiveRecord::Base
+
+  def change
+    create_table :articles do |t|
+      t.string :title
+  	  t.date_select :starts_at
+  		t.time_select :starts_at, :ignore_date => true
+      t.text :text
+
+      t.timestamps null: false
+    end
+  end
+end

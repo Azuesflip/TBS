@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
+
   root             			  'static_pages#home'
   get 	 'help'    		 => 'static_pages#help'
   get 	 'about'   		 => 'static_pages#about'
   get 	 'contact' 		 => 'static_pages#contact'
-  get 	 'news' 		 	 => 'static_pages#news'
+  get 	 'news' 	 		 => 'static_pages#news'
   get 	 'products' 	 => 'static_pages#products'
   get    'adlogin'   	 => 'sessions#new'
   post   'adlogin'   	 => 'sessions#create'
   delete 'adlogout'  	 => 'sessions#destroy'
+
   resources :admins
+  resources :articles
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
