@@ -5,13 +5,14 @@ Rails.application.routes.draw do
   get 	 'about'   		 => 'static_pages#about'
   get 	 'contact' 		 => 'static_pages#contact'
   get 	 'news' 	 		 => 'static_pages#news'
-  get 	 'products' 	 => 'static_pages#products'
   get    'adlogin'   	 => 'sessions#new'
   post   'adlogin'   	 => 'sessions#create'
   delete 'adlogout'  	 => 'sessions#destroy'
 
   resources :admins
   resources :articles
+  resources :products
+  resources :categories
 
 
 
