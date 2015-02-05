@@ -1,27 +1,21 @@
 <% provide(:title, "News") %>
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Articles</h1>
+<div class="center jumbotron">
+	<h1>Listing Articles</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+	<table>
 
-  <tbody>
-    <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.date %></td>
-        <td><%= article.body %></td>
-        <td><%= link_to 'Show', article %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
+  	<tbody>
+  	  <% @articles.each do |article| %>
+
+  	      <p><%= article.title %></p>
+  	      <h2><%= article.date %></h2>
+  	      <td><%= link_to 'Show Article', article, class: 'btn btn-default btn-center' %></td>
+
+  	  <% end %>
+  	</tbody>
+	</table>
+	<br>
+</div>

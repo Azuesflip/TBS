@@ -1,10 +1,10 @@
 class Product < ActiveRecord::Base
-	has_attached_file :photo
+	has_attached_file :photo,
 		:path => ":rails_root/public/system/:attachment/:id/:basename_:style.:extension",
 		:url => "/system/:attachment/:id/:basename_:style.:extension",
 		:styles => {
   		:thumb    => ['100x100#',  :jpg, :quality => 70],
-  		:preview  => ['480x480#',  :jpg, :quality => 70],
+  		:preview  => ['300x300#',  :jpg, :quality => 70],
   		:large    => ['600>',      :jpg, :quality => 70],
   		:retina   => ['1200>',     :jpg, :quality => 30]
 		},
