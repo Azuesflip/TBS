@@ -12,6 +12,7 @@ class StaticPagesController < ApplicationController
   	@articles = Article.all
   end
 
-  def products
+  def ourproducts
+  	@products = Product.all
   end
 end
