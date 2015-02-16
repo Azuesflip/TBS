@@ -20,6 +20,8 @@ html {
 
 body {
   padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url('/assets/DSC_0112_2.jpg');
 }
 
 section {
@@ -86,27 +88,30 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 20px;
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  color: white;
+  div {
+  	height: 30px;
+    a {
+	    color: $gray;
+	    &:hover {
+	      color: $gray-darker;
+	    }
+	  }
+	  small {
+	    float: left;
+	  }
+	  ul {
+	    float: right;
+	    list-style: none;
+	    li {
+	      float: left;
+	      margin-left: 15px;
+	    }
+	  }
+	}
 }
 
 /* miscellaneous */
