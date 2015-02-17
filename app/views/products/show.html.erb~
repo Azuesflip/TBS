@@ -2,7 +2,6 @@
 
 <div class="center jumbotron">
 <p>
-  <strong>Title:</strong>
   <%= @product.title %>
 </p>
 
@@ -19,7 +18,7 @@
 <% if @product.photo? %>
 	<%= image_tag @product.photo.url(:preview) %>
 	<br />
-	<%= link_to @product.photo.url, @product.photo.url %>
+	<%= link_to full photo, @product.photo.url %>
 <% end %>
 
 <% if logged_in? %>

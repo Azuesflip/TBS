@@ -16,11 +16,13 @@ $gray-medium-light: #eaeaea;
 
 html {
   overflow-y: scroll;
+  background: url(assets/images/DSC_0112_2.jpg) no-repeat center center fixed;
 }
 
 body {
   padding-top: 60px;
-  background-image: url('/assets/DSC_0112_2.jpg');
+  padding-bottom: 60px;
+  // background-image: url('/assets/DSC_0112_2.jpg');
 }
 
 section {
