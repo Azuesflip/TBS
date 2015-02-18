@@ -5,5 +5,5 @@ class Product < ActiveRecord::Base
     medium: '300x300>'
   }
 
-	validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/, :storage => :s3, :s3_credentials => S3_CREDENTIALS
+	validates_attachment_content_type :photo, :content_type => /\Aimage\/.*\Z/
 end
