@@ -15,6 +15,7 @@ gem 'aws-sdk'
 gem 'sprockets'
 gem "paperclip"
 gem 'rmagick'
+gem 's3_direct_upload'
 
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
