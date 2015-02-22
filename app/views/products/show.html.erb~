@@ -16,7 +16,7 @@
 	</p>
 
 	<% if @product.photo? %>
-		<%= image_tag @product.photo.url(:thumb) %>
+		<%= image_tag @product.photo.url(:square) %>
 		<br />
 		<%= link_to 'Full Photo', @product.photo.url %>
 	<% end %>
