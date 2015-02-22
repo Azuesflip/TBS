@@ -18,7 +18,7 @@
 		  <tbody>
   		  <% @products.each do |product| %>
   		    <tr>
-  		    	<td><%= image_tag product.photo.url(:thumb) %></td>
+  		    	<td><%= image_tag photo.upload.url(:thumb) %></td>
   		      <td><%= product.title %></td>
   		      <td><%= product.price %></td>
   		      <td><%= link_to 'Show Item', product %></td>
@@ -33,7 +33,7 @@
 
 
 
-	<%= link_to 'New Product', new_product_pat
+	<%= link_to 'New Product', new_product_path %>
 
 
 	</div>
