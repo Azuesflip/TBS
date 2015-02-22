@@ -15,10 +15,10 @@
 	  <%= @product.price %>
 	</p>
 
-	<% if @product.photo? %>
-		<%= image_tag @product.photo.url(:preview) %>
+	<% if product.photo? %>
+		<%= image_tag product.photo.url(:square) %>
 		<br />
-		<%= link_to 'Full Photo', @product.photo.url %>
+		<%= link_to 'Full Photo', product.photo.url %>
 	<% end %>
 
 	<% if logged_in? %>

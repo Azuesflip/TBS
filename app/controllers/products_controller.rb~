@@ -14,7 +14,8 @@ class ProductsController < ApplicationController
 
   # GET /products/new
   def new
-    @product = Product.new(key: params[:key])
+  	@s3_direct_post = S3_BUCKET.presigned_post(key: "uploads/#{SecureRandom.uuid}/${filename}", success_action_status: 201, acl: :public_read)
+    @product = Product.new
   end
 
   # GET /products/1/edit

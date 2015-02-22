@@ -1,4 +1,5 @@
 <% if logged_in? %>
+<div class="center jumbotron">
 
 	<h1>Editing Product</h1>
 
@@ -6,5 +7,6 @@
 
 	<%= link_to 'Show', @product %> |
 	<%= link_to 'Back', products_path %>
+</div>
 
 <% end %>

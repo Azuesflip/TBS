@@ -1,5 +1,9 @@
-<h1>New Product</h1>
+<% if logged_in? %>
+	<div class="center jumbotron">
+		<h1>New Product</h1>
 
-<%= render 'form' %>
+		<%= render 'form' %>
 
-<%= link_to 'Back', products_path %>
+		<%= link_to 'Back', products_path %>
+	</div>
+<% end %>

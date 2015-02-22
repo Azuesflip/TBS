@@ -11,10 +11,6 @@
     </div>
   <% end %>
 
-	<%= f.hidden_field :key %>
-
-	<p>File: @product.photo_name</p>
-
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
@@ -27,6 +23,18 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
+  = s3_uploader_form callback_url: photos_url, id: "s3-uploader"
+	= file_field_tag :file, multiple: true, class: 'btn btn-default'
+
+	erb:
+	<script id="template-upload" type="text/x-tmpl">
+	<div id="file-{%=o.unique_id%}" class="upload">
+	{%=o.name%}
+	<div class="progress progress-striped active">
+	<div class="bar progress-bar" style="width: 0%"></div>
+	</div>
+	</div>
+	</script>
   <div class="actions">
     <%= f.submit %>
   </div>

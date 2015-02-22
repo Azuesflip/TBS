@@ -11,13 +11,13 @@ gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem 'aws-sdk'
-
-gem 'sprockets'
-gem "paperclip"
+gem 'paperclip'
 gem 'rmagick'
 gem 's3_direct_upload'
 
 group :development, :test do
+	gem 'jumpup'
+	gem 'jumpup-heroku'
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
