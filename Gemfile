@@ -11,6 +11,7 @@ gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
 gem 'sdoc',                 '0.4.0', group: :doc
 gem 'aws-sdk'
+gem 'aws-s3'
 gem 'paperclip'
 gem 'rmagick'
 gem 's3_direct_upload'
