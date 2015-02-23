@@ -5,6 +5,12 @@
 	  <%= @product.title %>
 	</p>
 
+	<% if @product.photo? %>
+		<%= image_tag @product.photo.url(:square) %>
+		<br />
+		<%= link_to 'Full Photo', @product.photo.url %>
+	<% end %>
+
 	<p>
 	  <strong>Description:</strong></br >
 	  <%= @product.description %>
@@ -14,12 +20,6 @@
 	  <strong>Price:</strong>
 	  <%= @product.price %>
 	</p>
-
-	<% if @product.photo? %>
-		<%= image_tag @product.photo.url(:square) %>
-		<br />
-		<%= link_to 'Full Photo', @product.photo.url %>
-	<% end %>
 
 	<% if logged_in? %>
 
