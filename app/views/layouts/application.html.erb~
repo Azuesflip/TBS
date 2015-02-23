@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
-  <body style="background-image: url(https://s3-us-west-2.amazonaws.com/tbsproductimages/DSC_0112_2.jpg)">
+  <body style="background-image: url(https://s3-us-west-2.amazonaws.com/tbsproductimages/DSC_0112_2.jpg?X-Amz-Date=20150223T002050Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=0667d0e4a5eb16a4cb965b067866f0f80e17efa74e24f9e237e5f5b1178fcc22&X-Amz-Credential=ASIAIS2TRMVOFPZPRFCQ/20150223/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=AQoDYXdzEK///////////wEakAKCF7vG6jCjgMOwKppX4jULhS9ACEWhHwvjuLIJAxTK31sdW9cDs2FH/wX4oPqDC2nkNzyar6nybiYRrdqK%2BTG6aKVe8DkiA0bd26pP5eBGwYY77aKz/gslFAM/ELgckngjYf1Lr5J99Bvs2ZPvpi6V4nlu8OQdCf0SsJNwUkCysw86x6AJ%2BHGwbVNxnr0%2BcUxhVqGRRW09X8v625lex%2BZCbVbt4wdzXCtW9SjB2PT/e1lfWS3aULDw5uDbgK9bR%2Bkv0AakUovoHhZr6ZsD5%2BuIpcPCQv8DUB4Dxnd2Jm1XakPTLt%2BVDSn4%2BBjq%2BFPkPWnbJO/vp665IIQtI6EeNEJE%2BFGspXjxrHBOeNqdhzloeyCXmKmnBQ%3D%3D)">
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>

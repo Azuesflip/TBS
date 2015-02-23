@@ -9,12 +9,13 @@
 
   	<tbody>
   	  <% @articles.each do |article| %>
-
+					<div class="center jumbotron">
   	      <p><%= article.title %></p>
   	      <h2><%= article.date %></h2>
   	      <td><%= link_to 'Show Article', article, class: 'btn btn-default center' %></td>
-
+  	      </div>
   	  <% end %>
+  	  </div>
   	</tbody>
 	</table>
 	<br>

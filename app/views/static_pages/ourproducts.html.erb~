@@ -8,16 +8,15 @@
 
 
   	<tbody>
-  	  <% @products.each do |product| %>
-					<P><%= image_tag product.photo.url(:thumb) %></p>
-  	      <p><%= product.title %></p>
-  	      <h2><%= product.price %></h2>
-  	      <p><%= link_to 'Show Item', product, class: 'btn btn-default center' %></p>
-  	      </br >
-  	      </br >
+  		<div class="center jumbotron">
+  		  <% @products.each do |product| %>
+						<P><%= image_tag product.photo.url(:thumb) %>  <%= product.title %>  <%= product.price %></p>
+  		      <p><%= link_to 'Show Item', product, class: 'btn btn-default center' %></p>
+  		      </br >
+  		      </br >
 
-  	  <% end %>
+	  	  <% end %>
+  		</div>
   	</tbody>
 	</table>
 	<br>
-</div>
