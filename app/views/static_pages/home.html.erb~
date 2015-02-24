@@ -1,10 +1,12 @@
 <% provide(:title, "Home") %>
+<p id="notice"><%= notice %></p>
 
 <div class="center jumbotron">
 	<h1>Twisted Bit Studios</h1>
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lorem cursus, sagittis lectus ut, aliquam eros. Curabitur bibendum, leo vitae porttitor commodo, tellus erat laoreet sem, vel eleifend ex mi sed ante. Sed lorem lectus, consequat ultrices est id, dapibus sagittis lacus. Maecenas pellentesque facilisis viverra. Nunc bibendum magna id ultrices sagittis. Pellentesque vestibulum mattis nibh, at gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec volutpat nunc quam, sed vulputate lacus venenatis ac. Ut pharetra dolor in volutpat consectetur. Praesent et vestibulum lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tincidunt ullamcorper eros, elementum maximus ex. Aliquam erat volutpat. Nulla eleifend neque vitae ex congue, id mollis lorem viverra. Etiam in fermentum erat.</p>
+	<p>Our products are of the highest quality. They will bring a sense of home to you. Our custom designs will surely make an impact on any space. Please click below and browse our inventory!</p>
 	</br >
 		<td><%= link_to 'Our Products', products_path, class: 'btn btn-primary btn-lrg active' %></td>
-	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lorem cursus, sagittis lectus ut, aliquam eros. Curabitur bibendum, leo vitae porttitor commodo, tellus erat laoreet sem, vel eleifend ex mi sed ante. Sed lorem lectus, consequat ultrices est id, dapibus sagittis lacus. Maecenas pellentesque facilisis viverra. Nunc bibendum magna id ultrices sagittis. Pellentesque vestibulum mattis nibh, at gravida est. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec volutpat nunc quam, sed vulputate lacus venenatis ac. Ut pharetra dolor in volutpat consectetur. Praesent et vestibulum lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In tincidunt ullamcorper eros, elementum maximus ex. Aliquam erat volutpat. Nulla eleifend neque vitae ex congue, id mollis lorem viverra. Etiam in fermentum erat.</p>
+	</br>
+	<p> Find out what new things are happening with Twisted Bit Studios.</p>
 	<td><%= link_to 'Our Blog', news_path, class: 'btn btn-primary btn-lrg active' %></td>
 </div>
